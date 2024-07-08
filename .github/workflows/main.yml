@@ -1,14 +1,14 @@
 name: Dev Workflow
 
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
   workflow_dispatch:
 
 jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello from Dev
+      - name: Say Hello from main
         run: echo "Hello, World from main!"
